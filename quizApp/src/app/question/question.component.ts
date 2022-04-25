@@ -14,6 +14,9 @@ export class QuestionComponent implements OnInit {
   public QuestionCurrent:number= 0;
   public points:number=0;
   counter=60;
+  correctAnswer:number=0;
+  incorrectAnswer:number=0;
+
   constructor(private questionService:QuestionService) { }
 
   ngOnInit(): void {
@@ -34,6 +37,20 @@ export class QuestionComponent implements OnInit {
 
   perviousQuestion(){
    this.QuestionCurrent--;
+  }
+
+  //adding or retrieving points based on clicking (choosing) an option
+  selectAnswer(Questionnumber:number,option:any){
+     if(option.correct){
+       this.points+=10;
+       this.correctAnswer++;
+       //move to the next question
+       this.QuestionCurrent++;
+     }else{
+       this.points-=10;
+       this.incorrectAnswer++;
+       this.QuestionCurrent++;
+     }
   }
 
 }

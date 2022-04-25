@@ -29,7 +29,7 @@
            </div>
         <div class="options">
           <ol *ngFor="let option of Questions[QuestionCurrent]?.options">
-              <li>
+              <li (click)="selectAnswer(QuestionCurrent+1,option)">
                   <div class="card">
                      {{option.text}}
                   </div>
