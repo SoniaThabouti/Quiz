@@ -1,0 +1,95 @@
+{
+    "questions": [{
+            "questionText": "Were is situated Poland?",
+            "options": [{
+                    "text": "Europe",
+                    "correct": true
+                },
+                {
+                    "text": "Africa"
+                },
+                {
+                    "text": "America"
+                },
+                {
+                    "text": "Asia"
+                }
+            ],
+            "explanation": "Poland is situated in east europe"
+        },
+        {
+            "questionText": "Which of the following is NOT a type used in TypeScript?",
+            "options": [{
+                    "text": "number"
+                },
+                {
+                    "text": "string"
+                },
+                {
+                    "text": "boolean"
+                },
+                {
+                    "text": "enum",
+                    "correct": true
+                }
+            ],
+            "explanation": "enum is not used as a type in TypeScript"
+        },
+        {
+            "questionText": "Which is a noSQL database",
+            "options": [{
+                    "text": "SQL"
+                },
+                {
+                    "text": "MongoDB",
+                    "correct": true
+                },
+                {
+                    "text": "Oracle"
+                },
+                {
+                    "text": "PLSQL"
+                }
+            ],
+            "explanation": "interfaces are typically used to list the properties and methods for an object"
+        },
+        {
+            "questionText": "How else can Array<number> be written in TypeScript?",
+            "options": [{
+                    "text": "@number"
+                },
+                {
+                    "text": "number[]",
+                    "correct": true
+                },
+                {
+                    "text": "number!"
+                },
+                {
+                    "text": "number?"
+                }
+            ],
+            "explanation": "number[] is another way of writing Array<number> in TypeScript"
+        },
+        {
+            "questionText": "In which of these does a class take parameters?",
+            "options": [{
+                    "text": "constructor",
+                    "correct": true
+                },
+                {
+                    "text": "destructor"
+                },
+                {
+                    "text": "import"
+                },
+                {
+                    "text": "subscribe"
+                }
+            ],
+            "explanation": "a constructor is used by a class to take in parameters"
+        }
+        
+    
+    ]
+}
