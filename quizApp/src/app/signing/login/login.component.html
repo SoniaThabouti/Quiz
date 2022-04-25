@@ -14,13 +14,15 @@
             <form class="s12" (ngSubmit)="loginUser()">
                 <div>
                     <div class="input-field s12">
-                        <input type="text" data-ng-model="name" [(ngModel)]="user.email" class="form-control" id="email" name="email">
                         <label class="">Email</label>
+                        <input type="text" data-ng-model="name" [(ngModel)]="user.email" class="form-control" id="email" name="email">
+                        
                     </div>
                 
                     <div class="input-field s12">
-                        <input type="password" [(ngModel)]="user.password" class="form-control" id="password" name="password">
                         <label>Password</label>
+                        <input type="password" [(ngModel)]="user.password" class="form-control" id="password" name="password">
+                        
                     </div>
                 </div>
 
