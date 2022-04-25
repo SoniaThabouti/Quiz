@@ -10,6 +10,10 @@ import { QuestionService } from '../service/question.service';
 export class QuestionComponent implements OnInit {
 
   user:User=new User();
+  public Questions: any = [];
+  public QuestionCurrent:number= 0;
+  public points:number=0;
+  counter=60;
   constructor(private questionService:QuestionService) { }
 
   ngOnInit(): void {
@@ -19,8 +23,17 @@ export class QuestionComponent implements OnInit {
   getListQuestions(){
      this.questionService.getQuestion()
      .subscribe(response=>{
-       console.log(response);
+       this.Questions = response.questions;
      })
+  }
+
+  //increase the counter to move to the next question and decrease the counter for the previous one
+  nextQuestion(){
+  this.QuestionCurrent++;
+  }
+
+  perviousQuestion(){
+   this.QuestionCurrent--;
   }
 
 }
