@@ -1,0 +1,37 @@
+<div class="ad-log-main">
+    <div>
+        <ul>
+           <li class="page-back"><a href="./"><i class="fa fa-backward" aria-hidden="true"></i> Logout</a>
+           </li>
+        </ul>
+    </div>
+    <div class="ad-log-in">
+            <a href="" routerLink="/login" routerLinkActive="active" type="button">Sign-In</a>/<a href="" routerLink="/sign-in" routerLinkActive="active" type="button">Sign-Up</a>
+        <div class="ad-log-in-con">
+    <div class="log-in-pop-center">
+            <h4>Login as a User</h4>
+            <p>Connect to the Quiz!</p>
+            <form class="s12" (ngSubmit)="loginUser()">
+                <div>
+                    <div class="input-field s12">
+                        <input type="text" data-ng-model="name" [(ngModel)]="user.email" class="form-control" id="email" name="email">
+                        <label class="">Email</label>
+                    </div>
+                
+                    <div class="input-field s12">
+                        <input type="password" [(ngModel)]="user.password" class="form-control" id="password" name="password">
+                        <label>Password</label>
+                    </div>
+                </div>
+
+                <!--<div class="input-field s4">
+                 <a class="log-in-btn waves-input-wrapper" style="width:150px; height:30px; color: aliceblue;" >adminspace</a>
+                </div> -->
+                <div class=" mt-4">
+                  <button type="submit" class="log-in-btn styling_button">Login</button>
+                </div>
+               </form>
+        </div>
+        </div>
+    </div>
+</div>
